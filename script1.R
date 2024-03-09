@@ -3,7 +3,7 @@ library(tximport)
 #library(ensembldb)
 library(EnsDb.Hsapiens.v86)
 library(biomaRt)
-
+#git test
 #### FILES ####
 study.design <- read_tsv('studydesign.txt')
 path <- paste('mappedReads/', study.design$sample, '/abundance.h5', sep='')
