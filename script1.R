@@ -3,7 +3,6 @@ library(tximport)
 #library(ensembldb)
 library(EnsDb.Hsapiens.v86)
 library(biomaRt)
-#git test
 #### FILES ####
 study.design <- read_tsv('studydesign.txt')
 path <- paste('mappedReads/', study.design$sample, '/abundance.h5', sep='')
@@ -37,7 +36,6 @@ Tx <- dplyr::select(Tx, "target_id", "gene_name")
 
 #### GENCODE DB ####
 # 117952 obs. i w nazwach tx i genów są ensemblowe kody
-# jak poznac nazwy genow?
 
 txdb.gencode <- makeTxDbFromGFF('gencode.v45.basic.annotation.gff3',
                                 organism = 'Homo sapiens')
